@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Dependency from activity</string>
+
+    <string name="new_item_hint">New item. Random if empty</string>
+    <string name="button_add">Add</string>
+    <string name="item_count_label" formatted="true">Items count: %d</string>
+
+    <string name="tools_item_count_label">Items count: 5</string>
 </resources>
