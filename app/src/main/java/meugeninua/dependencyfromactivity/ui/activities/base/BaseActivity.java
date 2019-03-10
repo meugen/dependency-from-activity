@@ -15,8 +15,8 @@ public abstract class BaseActivity<C extends ActivityComponent> extends AppCompa
 
     @Override
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         component = createActivityComponent(DependencyApp.provideAppComponent(this));
+        super.onCreate(savedInstanceState);
     }
 
     @Override
