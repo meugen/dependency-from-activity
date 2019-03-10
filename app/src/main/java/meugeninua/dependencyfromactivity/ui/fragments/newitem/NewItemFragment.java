@@ -42,7 +42,7 @@ public class NewItemFragment extends BaseFragment<MainComponent, NewItemBinding>
     }
 
     @Override
-    protected void inject(final MainComponent component) {
+    public void inject(final MainComponent component) {
         binding = new NewItemBindingImpl();
         viewModel = component.provideMainViewModel();
     }

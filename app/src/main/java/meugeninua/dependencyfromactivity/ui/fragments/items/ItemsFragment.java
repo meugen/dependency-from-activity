@@ -36,7 +36,7 @@ public class ItemsFragment extends BaseFragment<MainComponent, ItemsBinding> {
     }
 
     @Override
-    protected void inject(final MainComponent component) {
+    public void inject(final MainComponent component) {
         viewModel = component.provideMainViewModel();
         binding = new ItemsBindingImpl();
     }

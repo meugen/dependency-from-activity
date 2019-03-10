@@ -7,10 +7,12 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import meugeninua.dependencyfromactivity.app.di.Injectable;
 import meugeninua.dependencyfromactivity.ui.di.ActivityComponent;
 import meugeninua.dependencyfromactivity.ui.fragments.base.binding.Binding;
 
-public abstract class BaseFragment<C extends ActivityComponent, B extends Binding> extends Fragment {
+public abstract class BaseFragment<C extends ActivityComponent, B extends Binding> extends Fragment
+        implements Injectable<C> {
 
     protected B binding;
 
@@ -34,6 +36,4 @@ public abstract class BaseFragment<C extends ActivityComponent, B extends Bindin
         binding.detachView();
         super.onDestroyView();
     }
-
-    protected abstract void inject(final C component);
 }

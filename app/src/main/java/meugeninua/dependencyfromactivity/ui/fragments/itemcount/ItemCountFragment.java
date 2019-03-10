@@ -36,7 +36,7 @@ public class ItemCountFragment extends BaseFragment<MainComponent, ItemCountBind
     }
 
     @Override
-    protected void inject(final MainComponent component) {
+    public void inject(final MainComponent component) {
         viewModel = component.provideMainViewModel();
         binding = new ItemCountBindingImpl(getResources());
     }
